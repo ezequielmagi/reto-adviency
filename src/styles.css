@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-christmas-background-panel-design-picture-image_978151.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  background-color: #fafafa;
+  border-radius: 20px;
+  font-family: sans-serif;
+  height: 30vh;
+  margin: 20% auto;
+  text-align: center;
+  width: 30%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Mountains of Christmas", cursive;
+}
+
+ul {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
