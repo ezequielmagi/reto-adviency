@@ -1,13 +1,20 @@
+import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [regalos, setRegalos] = useState([
+    "Medias",
+    "Calzoncillos",
+    "Crema de Afeitar"
+  ]);
+
   return (
     <div className="App">
       <h1>Regalos</h1>
       <ul>
-        <li>Medias</li>
-        <li>Calzoncillos</li>
-        <li>Crema de afeitar</li>
+        {regalos.map((regalo) => (
+          <li key={regalo}>{regalo}</li>
+        ))}
       </ul>
     </div>
   );
