@@ -6,21 +6,26 @@
 
 html {
   background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-christmas-background-panel-design-picture-image_978151.jpg);
-
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-size: fill;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+#root {
+  display: grid;
+  place-content: center;
 }
 
 .App {
   background-color: #fafafa;
   border-radius: 20px;
-  font-family: sans-serif;
-  height: 30vh;
-  margin: 20% auto;
-  text-align: center;
-  width: 30%;
+  padding: 24px;
 }
 
 h1 {
@@ -33,6 +38,7 @@ ul {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
 }
 
